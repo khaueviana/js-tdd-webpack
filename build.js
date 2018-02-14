@@ -5233,7 +5233,7 @@ var where = /*#__PURE__*/__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__inte
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_226__unionWith__ = __webpack_require__(307);
 /* unused harmony reexport unionWith */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_227__uniq__ = __webpack_require__(61);
-/* unused harmony reexport uniq */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_227__uniq__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_228__uniqBy__ = __webpack_require__(114);
 /* unused harmony reexport uniqBy */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_229__uniqWith__ = __webpack_require__(115);
@@ -5524,14 +5524,34 @@ var where = /*#__PURE__*/__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__inte
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ramda__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_all__ = __webpack_require__(321);
+// import * as R from 'ramda'
+
+
+
+
+
 
 
 var arr1 = [1, 1, 1, 2, 2, 3, 4, 5, 6, 6];
 var arr2 = [5, 6, 6, 6, 7, 7, 8, 9, 10, 1];
 
-var arr3 = __WEBPACK_IMPORTED_MODULE_0_ramda__["a" /* union */](arr1, arr2);
+var arr3 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ramda__["a" /* union */])(arr1, arr2);
+
+var arr4 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_ramda__["b" /* uniq */])(arr1, arr2);
 
 console.log(arr3);
+
+console.log(arr4);
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["a" /* default */])(3, 2));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["b" /* sub */])(3, 2));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__utils__["c" /* multiplicacao */])(3, 2));
+
+console.log(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__utils_all__["a" /* div */])(4, 2));
 
 /***/ }),
 /* 121 */
@@ -13489,6 +13509,71 @@ var zipWith = /*#__PURE__*/__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__in
   return rv;
 });
 /* unused harmony default export */ var _unused_webpack_default_export = (zipWith);
+
+/***/ }),
+/* 320 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return sub; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return mult; });
+/* unused harmony export div */
+var sum = function sum(a, b) {
+  return a + b;
+};
+
+//named export
+//you can have multiple exports inside of one
+//same file
+//you can only execute with the same name
+//import needs the braces { sub }
+var sub = function sub(a, b) {
+  return a - b;
+};
+
+var mult = function mult(a, b) {
+  return a * b;
+};
+
+var div = function div(a, b) {
+  return a / b;
+};
+
+
+
+//main function
+//you only can have one default per file
+// import with some name
+// it doesn't need use the braces
+
+/* harmony default export */ __webpack_exports__["a"] = (sum);
+
+/***/ }),
+/* 321 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export sum */
+/* unused harmony export sub */
+/* unused harmony export mult */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return div; });
+var sum = function sum(a, b) {
+  return a + b;
+};
+
+var sub = function sub(a, b) {
+  return a - b;
+};
+
+var mult = function mult(a, b) {
+  return a * b;
+};
+
+var div = function div(a, b) {
+  return a / b;
+};
+
+
 
 /***/ })
 /******/ ]);
