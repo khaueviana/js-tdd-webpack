@@ -1,6 +1,7 @@
 const webpackg = require('webpack')
 
 module.exports = {
+    devtool: 'source-map',
     entry: {
         filename: './app.js'
     },
@@ -20,5 +21,12 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new webpackg.optimize.UglifyJsPlugin({
+            compress: { warnings: false },
+            output: { comments: false },
+            sourceMap: true
+        })
+    ]
 }

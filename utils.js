@@ -11,7 +11,7 @@ const mult = (a, b) => a * b
 
 const div = (a, b) => a / b
 
-export { mult as multiplicacao, div }
+export { mult, div }
 
 //main function
 //you only can have one default per file

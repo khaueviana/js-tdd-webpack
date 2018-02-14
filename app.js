@@ -2,7 +2,7 @@
 
 import { union, uniq } from 'ramda'
 
-import sum, { sub, multiplicacao, div as dividir } from './utils'
+import sum, { sub, mult, div as dividir } from './utils'
 
 import { div as div2 } from './utils-all'
 
@@ -21,6 +21,6 @@ console.log(sum(3, 2))
 
 console.log(sub(3, 2))
 
-console.log(multiplicacao(3, 2))
+console.log(mult(3, 2))
 
 console.log(div2(4, 2))
